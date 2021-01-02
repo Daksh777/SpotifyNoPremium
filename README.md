@@ -10,7 +10,7 @@ This is a custom theme that removes the "Upgrade" button from the Spotify client
 
 # Installation
  ### Spicetify CLI
- Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation)
+ Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation).
  
  ### Installing Theme
  
