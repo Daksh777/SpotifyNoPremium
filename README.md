@@ -1,5 +1,5 @@
 # What is this?
-This is a custom theme which removes the "Premium" button from Spotify using spicetify-cli
+This is a custom theme which removes the "Premium" button from the Spotify client using the Spicetify CLI.
 
 # Screenshot
 ![Screenshot](https://i.imgur.com/ffG9TQV.png)
