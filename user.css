@@ -1,0 +1,14 @@
+.upgrade-button, button[data-menu-item="upgrade-account"], button[id="upgradeAccount"] {
+  display: none !important;
+}
+
+.account-info__profile-info-product {
+  text-indent: -9999px;
+  line-height: 0;
+}
+.account-info__profile-info-product:after {
+  content: 'Spotify Premium';
+  text-indent: 0;
+  display: block;
+  line-height: initial;
+}
