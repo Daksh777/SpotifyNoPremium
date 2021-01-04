@@ -9,10 +9,10 @@ This is a custom theme that removes the "Upgrade" button from the Spotify client
 ![Without](https://i.imgur.com/dCGxr2W.png)
 
 # Installation
- ### Spicetify CLI
+ ### 1. Installing Spicetify CLI
  Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation).
  
- ### Installing Theme
+ ### 2. Installing Theme
  
 #### Linux and MacOS:
 In **Bash**:
@@ -31,5 +31,5 @@ git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 spicetify apply
 ```
-### BlockTheSpot (Optional)
+### 3. Installing BlockTheSpot (Optional)
 Use [BlockTheSpot.bat](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/master/BlockTheSpot.bat) to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot
