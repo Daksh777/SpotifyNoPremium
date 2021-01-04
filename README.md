@@ -32,4 +32,4 @@ spicetify config current_theme SpotifyNoPremium
 spicetify apply
 ```
 ### 3. Installing BlockTheSpot (Optional)
-Use [BlockTheSpot.bat](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/master/BlockTheSpot.bat) to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot
+Use [BlockTheSpot.bat](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/master/BlockTheSpot.bat) to block Spotify ads and more, source: https://github.com/mrpond/BlockTheSpot
