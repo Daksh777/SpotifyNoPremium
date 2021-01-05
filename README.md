@@ -36,4 +36,4 @@ spicetify apply
 Use [BlockTheSpot.bat](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/1e0a272133b88ca44cd5d7523f5b2ce6f59a1fd0/BlockTheSpot.bat) to block Spotify ads and more, source: https://github.com/mrpond/BlockTheSpot
 
 ## Option 2:
-Use [BlockTheSpot.bat (new)](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/master/BlockTheSpot.bat) with the functionality to remove the "Upgrade button".
+Use [BlockTheSpot.bat (new)](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/master/BlockTheSpot.bat) with the functionality to remove the "Upgrade button" and also block all Spotify ads. (Recommended)
