@@ -20,3 +20,7 @@
 .main-topBar-UpgradeButton {
   display: none;
 }
+
+#context-menu > div > ul > li:nth-child(3) > a {
+  display: none !important;
+}
