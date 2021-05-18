@@ -1,12 +1,7 @@
 # What is this?
-This is a custom theme that removes the "Upgrade" button from the Spotify client using the Spicetify CLI.
+This is a custom theme that removes the "Upgrade" button and the placeholder for ads from the Spotify client using the Spicetify CLI. <br>
+Supports both old and new UI
 
-# Screenshot
-#### With custom theme
-![With](https://i.imgur.com/ffG9TQV.png)
-
-#### Without custom theme
-![Without](https://i.imgur.com/dCGxr2W.png)
 
 # Installation
  ### 1. Installing Spicetify CLI
