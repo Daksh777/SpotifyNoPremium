@@ -21,6 +21,10 @@
   display: none;
 }
 
-#context-menu > div > ul > li:nth-child(3) > a {
+#context-menu > div > ul > li:nth-child(4) > a {
   display: none !important;
+}
+
+.main-topBar-topbarContent:not(.main-topBar-topbarContentFadeIn)>* {
+  opacity: 1 !important;
 }
