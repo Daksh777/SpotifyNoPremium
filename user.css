@@ -12,3 +12,11 @@
   display: block;
   line-height: initial;
 }
+
+/* For new UI */
+.main-leaderboardComponent-container{
+  display: none;
+}
+.main-topBar-UpgradeButton {
+  display: none;
+}
