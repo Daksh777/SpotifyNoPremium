@@ -1,5 +1,5 @@
 # What is this?
-This is a custom theme that removes the "Upgrade" button and the placeholder for ads from the Spotify client using the Spicetify CLI. <br>
+This is a modified Spotify stock theme that removes the `Upgrade` button, ad placeholder and increases the size of play/pause button from the Spotify client using the Spicetify CLI. <br>
 Supports both old and new UI
 
 
