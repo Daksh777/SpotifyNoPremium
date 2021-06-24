@@ -26,9 +26,7 @@
 }
 
 .main-trackList-rowPlayPauseButton {
-  width: 22px !important;
   cursor: pointer !important;
-  margin-left: -3px !important;
 }
 
 div.GlueDropTarget.personal-library {
