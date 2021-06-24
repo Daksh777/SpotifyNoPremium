@@ -21,10 +21,6 @@
   display: none;
 }
 
-#context-menu > div > ul > li:nth-child(4) > a { /* Replace the 4 with any other number in the menu if you use some extension which adds a new menu to the dropdown list */
-  display: none !important;
-}
-
 .main-trackList-rowPlayPauseButton {
   cursor: pointer !important;
 }
