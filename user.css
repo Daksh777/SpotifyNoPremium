@@ -1,4 +1,4 @@
-.upgrade-button, button[data-menu-item="upgrade-account"], button[id="upgradeAccount"] {
+.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
   display: none !important;
 }
 
