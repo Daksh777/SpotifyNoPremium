@@ -25,10 +25,6 @@
   display: none !important;
 }
 
-.main-topBar-topbarContent:not(.main-topBar-topbarContentFadeIn)>* {
-  opacity: 1 !important;
-}
-
 .main-trackList-rowPlayPauseButton {
   width: 22px !important;
   cursor: pointer !important;
