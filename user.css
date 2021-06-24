@@ -30,3 +30,9 @@
   cursor: pointer !important;
   margin-left: -3px !important;
 }
+
+div.GlueDropTarget.personal-library {
+  padding: none !important;
+  padding-right: 25px !important;
+  padding-left: 8px !important;
+}
