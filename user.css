@@ -1,4 +1,4 @@
-.upgrade-button, button[data-menu-item="upgrade-account"], button[id="upgradeAccount"] {
+.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
   display: none !important;
 }
 
@@ -19,10 +19,6 @@
 }
 .main-topBar-UpgradeButton {
   display: none;
-}
-
-#context-menu > div > ul > li:nth-child(4) > a { /* Replace the 4 with any other number in the menu if you use some extension which adds a new menu to the dropdown list */
-  display: none !important;
 }
 
 .main-trackList-rowPlayPauseButton {
