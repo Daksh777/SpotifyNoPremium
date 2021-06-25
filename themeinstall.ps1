@@ -1,3 +1,8 @@
+Write-Host @'
+Author: @Daksh777
+Website: https://daksh.eu.org
+'@`n
+
 Add-Type -AssemblyName PresentationFramework
 $input = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your system?', 'Spicetify CLI Installtion', 'YesNoCancel');
 
