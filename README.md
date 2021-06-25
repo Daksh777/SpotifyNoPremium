@@ -7,7 +7,10 @@ Supports both old and new UI
 # Installation
 
 ## 1. Automatic installation for Windows users
-Run the [auto install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/fullautoinstall.ps1) which installs Git, Spicetify CLI (can be cancelled if already installed) and the theme.
+- Run the [full install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/fullautoinstall.ps1) which installs Git + Spicetify CLI (can be cancelled if already installed) + theme. <br> <br>
+OR <br> <br>
+- Run [theme only install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/themeinstall.ps1) which installs only the theme + Spicetify (can be cancelled if already installed)
+
 > Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
 
 ## 2. Manual installation for all users
