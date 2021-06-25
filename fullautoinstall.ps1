@@ -1,3 +1,8 @@
+Write-Host @'
+Author: @Daksh777
+Website: https://daksh.eu.org
+'@`n
+
 Add-Type -AssemblyName PresentationFramework
 $git = [System.Windows.MessageBox]::Show('Is Git installed in your system?', 'Git Installation', 'YesNoCancel');
 
