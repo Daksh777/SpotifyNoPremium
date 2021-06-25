@@ -2,9 +2,15 @@
 This is a modified Spotify stock theme that removes the `Upgrade` button, ad placeholder and increases the size of play/pause button from the Spotify client using the Spicetify CLI. <br>
 Supports both old and new UI
 
-> Note: Make sure to use the latest Spicetify CLI. Run `spicetfy upgrade` and then `spicetify backup apply` to update it to the latest version.
+> Note: Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetfy upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
 
 # Installation
+
+## 1. Automatic installation for Windows users
+Run the [auto install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/autoinstall.ps1) which installs Git, Spicetify CLI (can be cancelled if already installed) and the theme.
+> Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
+
+## 2. Manual installation for all users
  ### 1. Installing Spicetify CLI
  Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation).
  
