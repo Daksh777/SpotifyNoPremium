@@ -29,6 +29,7 @@ $input = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your s
 if ($input -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
  Write-Host "Installing theme`n"
+ spicetify upgrade
  cd "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
