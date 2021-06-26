@@ -36,7 +36,7 @@ if ($spice -eq 'Yes') {
 
 
 Add-Type -AssemblyName PresentationFramework
-$bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
+$bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (Recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
 
 if ($bts -eq 'Yes') {
 Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.bat" -OutFile "SpotifyNoPremium.bat"
@@ -47,7 +47,7 @@ Remove-Item "SpotifyNoPremium.bat"
 if ($bts -eq 'No') {
  Write-Host "`nNot installing BlockTheSpot"
  exit
- }
+}
 
  if ($spice -eq 'Cancel') {
  Write-Host "`nOperation Cancelled"
