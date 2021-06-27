@@ -1,5 +1,5 @@
 # What is this?
-This is a modified Spotify stock theme that removes the `Upgrade` button, the ad placeholder and `Upgrade account` (in the drop down menu) from the Spotify client using the Spicetify CLI. <br>
+This is a modified Spotify stock theme that removes the `Upgrade` button, ad placeholders and `Upgrade account` (in the drop down menu) from the Spotify client using the Spicetify CLI. <br>
 Supports both old and new UI
 
 > Note: Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetfy upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
@@ -7,9 +7,9 @@ Supports both old and new UI
 # Installation
 
 ## 1. Automatic installation for Windows users
-- Run the [full install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/full-install.ps1) which installs **Git** + **Spicetify CLI** (both can be cancelled if already installed) + **the theme** + **BlockTheSpot** (to block all Spotify ads). <br> <br>
+- Run the [full install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/full-install.ps1) which installs **Git** + **Spicetify CLI** (both can be cancelled if already installed) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads). <br> <br>
 OR <br> <br>
-- Run [theme only install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/theme-install.ps1) which installs only **Spicetify CLI** (can be cancelled if already installed) + **the theme** + **BlockTheSpot** (to block all Spotify ads).
+- Run [theme only install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/theme-install.ps1) which installs only **Spicetify CLI** (can be cancelled if already installed) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads).
 
 > Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
 
