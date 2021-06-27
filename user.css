@@ -29,3 +29,8 @@ div.GlueDropTarget.personal-library {
   padding: none !important;
   padding-right: 25px !important;
 }
+
+/*Home page Ad section*/
+.desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
+  display: none !important;
+}
