@@ -29,3 +29,34 @@ div.GlueDropTarget.personal-library {
   padding: none !important;
   padding-right: 25px !important;
 }
+
+.main-playlistEditDetailsModal-closeBtn {
+  cursor: pointer;
+}
+
+.main-rootlist-rootlistItemLink:link, .main-rootlist-rootlistItemLink:visited,
+.x-sortBox-sortDropdown,
+.main-contextMenu-menuItemButton,
+.main-trackList-column,
+.main-moreButton-button,
+.x-downloadButton-button,
+.main-playButton-PlayButton,
+.main-coverSlotExpandedCollapseButton-chevron,
+.main-coverSlotCollapsed-chevron,
+.control-button:focus, .control-button:hover,
+.main-repeatButton-button,
+.main-skipForwardButton-button,
+.main-playPauseButton-button,
+.main-skipBackButton-button,
+.main-shuffleButton-button,
+.main-addButton-button,
+.progress-bar__slider,
+.main-editImageButton-image {
+  cursor: pointer;
+}
+
+
+/*Home page Ad section*/
+.desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
+  display: none !important;
+}
