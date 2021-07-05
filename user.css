@@ -1,6 +1,9 @@
+/* Removes "Upgrade to premium" */
 .upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
   display: none !important;
 }
+
+/* Old UI stuff */
 
 .account-info__profile-info-product {
   text-indent: -9999px;
@@ -14,6 +17,7 @@
 }
 
 /* For new UI */
+
 .main-leaderboardComponent-container{
   display: none;
 }
@@ -26,6 +30,8 @@ div.GlueDropTarget.personal-library {
   padding-right: 25px !important;
 }
 
+/* Pointer cursors for accesbility */
+.x-toggle-wrapper,
 .main-playlistEditDetailsModal-closeBtn,
 .main-trackList-rowPlayPauseButton,
 .main-rootlist-rootlistItemLink:link, .main-rootlist-rootlistItemLink:visited,
@@ -50,7 +56,7 @@ div.GlueDropTarget.personal-library {
 }
 
 
-/*Home page Ad section*/
+/*Home page ad section*/
 .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
   display: none !important;
 }
