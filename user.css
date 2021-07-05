@@ -21,19 +21,13 @@
   display: none;
 }
 
-.main-trackList-rowPlayPauseButton {
-  cursor: pointer !important;
-}
-
 div.GlueDropTarget.personal-library {
   padding: none !important;
   padding-right: 25px !important;
 }
 
-.main-playlistEditDetailsModal-closeBtn {
-  cursor: pointer;
-}
-
+.main-playlistEditDetailsModal-closeBtn,
+.main-trackList-rowPlayPauseButton,
 .main-rootlist-rootlistItemLink:link, .main-rootlist-rootlistItemLink:visited,
 .x-sortBox-sortDropdown,
 .main-contextMenu-menuItemButton,
