@@ -31,6 +31,7 @@ div.GlueDropTarget.personal-library {
 }
 
 /* Pointer cursors for accesbility */
+.main-dropDown-dropDown,
 .x-toggle-wrapper,
 .main-playlistEditDetailsModal-closeBtn,
 .main-trackList-rowPlayPauseButton,
