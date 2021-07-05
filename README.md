@@ -1,5 +1,5 @@
 # What is this?
-This is a modified Spotify stock theme that removes the `Upgrade` button, ad placeholders and `Upgrade account` (in the drop down menu) from the Spotify client using the Spicetify CLI. <br>
+This is a modified Spotify stock theme that removes the `Upgrade` button, `Upgrade account` (in the drop down menu), ad placeholders and adds pointer cursors where neccessary for better accesbility to the Spotify client using the Spicetify CLI. <br>
 Supports both old and new UI
 
 > Note: Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
