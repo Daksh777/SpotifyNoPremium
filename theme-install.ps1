@@ -26,7 +26,8 @@ if ($spice -eq 'Yes') {
  cd "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
- spicetify restore backup apply
+ spicetify clear
+ spicetify backup apply
  Write-Host "`n Installed theme successfully"
  }
 
