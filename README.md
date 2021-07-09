@@ -1,8 +1,19 @@
 # What is this?
-This is a modified Spotify stock theme that removes the `Upgrade` button, `Upgrade account` (in the drop down menu), ad placeholders and adds pointer cursors where neccessary for better accesbility to the Spotify client using the Spicetify CLI. <br>
-Supports both old and new UI
+This is a modified Spotify stock theme that:
+- [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
+- Removes `Upgrade` button
+- Removes `Upgrade to Premium` entry in drop-down menu
+- Removes ad placeholders (in Home tab and above the now playing bar)
+- Adds pointer cursors to clickable elements (See [#10](https://github.com/Daksh777/SpotifyNoPremium/discussions/10))
 
 > Note: Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
+
+# Screenshots
+
+| Before | After |
+| ----------- | ----------- |
+| <img src="https://i.imgur.com/VAtMBYx.jpg"/> | <img src="https://i.imgur.com/g0heSZm.jpg"/> |
+| <img src="https://i.imgur.com/to8dzhO.jpg"/> | <img src="https://i.imgur.com/JDj5rvQ.jpg"/> |
 
 # Installation
 
