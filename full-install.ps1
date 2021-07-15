@@ -3,6 +3,12 @@ Author: @Daksh777
 Website: https://daksh.eu.org
 '@`n
 
+function RefreshPath {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") +
+                ";" +
+                [System.Environment]::GetEnvironmentVariable("Path","User")
+}
+
 Add-Type -AssemblyName PresentationFramework
 $git = [System.Windows.MessageBox]::Show('Is Git installed in your system?', 'Git Installation', 'YesNoCancel');
 
@@ -15,6 +21,7 @@ Write-Host "`nDownloading Git installer"
 Start-Process "https://git-scm.com/download/win"
 Write-Host "Please install Git using the downloaded installer and come back here once done.`n"
 Read-Host "If Git was installed, press enter to continue"
+RefreshPath
 }
 
 if ($git -eq 'Cancel') {
@@ -42,6 +49,7 @@ if ($spice -eq 'Yes') {
  Write-Host "`nInstalling Spicetify CLI`n"
  Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
  Write-Host "`n Installed Spicetify CLI`n"
+ RefreshPath
  Write-Host "Installing the theme`n"
  cd "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
