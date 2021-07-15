@@ -3,6 +3,12 @@ Author: @Daksh777
 Website: https://daksh.eu.org
 '@`n
 
+function RefreshPath {
+    $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") +
+                ";" +
+                [System.Environment]::GetEnvironmentVariable("Path","User")
+}
+
 Add-Type -AssemblyName PresentationFramework
 $spice = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your system?', 'Spicetify CLI Installtion', 'YesNoCancel');
 
@@ -22,6 +28,7 @@ if ($spice -eq 'Yes') {
  Write-Host "`nInstalling Spicetify CLI`n"
  Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
  Write-Host "`n Installed Spicetify CLI`n"
+ RefreshPath
  Write-Host "Installing the theme`n"
  cd "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
