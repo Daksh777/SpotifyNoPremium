@@ -24,7 +24,7 @@ OR <br> <br>
 - Run [theme only install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/theme-install.ps1) which installs only **Spicetify CLI** (can be cancelled if already installed) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads).
 
 ### Updating
-You can fetch the latest version of this theme by running [update script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/update.ps1)
+You can fetch the latest version of this theme by running the [update script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/update.ps1).
 
 > Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
 
