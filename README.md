@@ -1,6 +1,6 @@
 ## ⚠ Please have a look at [#13](https://github.com/Daksh777/SpotifyNoPremium/issues/13#issuecomment-881127907) if you are getting a blank screen in Spotify after applying the theme for a workaround.
-# What is this?
-This is a modified Spotify stock theme that:
+# Features
+This is a Spicetify theme which:
 - [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
 - Removes `Upgrade` button
 - Removes `Upgrade to Premium` entry in drop-down menu
@@ -22,6 +22,9 @@ This is a modified Spotify stock theme that:
 - Run the [full install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/full-install.ps1) which installs **Git** + **Spicetify CLI** (both can be cancelled if already installed) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads). <br> <br>
 OR <br> <br>
 - Run [theme only install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/theme-install.ps1) which installs only **Spicetify CLI** (can be cancelled if already installed) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads).
+
+### Updating
+You can fetch the latest version of this theme by running [update script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/update.ps1)
 
 > Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
 
