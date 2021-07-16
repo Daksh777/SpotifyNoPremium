@@ -6,6 +6,9 @@ Website: https://daksh.eu.org
 Write-Host "Updating theme from GitHub repo"
 cd "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull origin
+spicetify update
+
+Write-Host "`nUpdated theme successfully"
 
 Add-Type -AssemblyName PresentationFramework
 $bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (Recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
