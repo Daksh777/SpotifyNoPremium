@@ -1,3 +1,4 @@
+## ⚠ Please have a look at [#13](https://github.com/Daksh777/SpotifyNoPremium/issues/13#issuecomment-881127907) if you are getting a blank screen in Spotify after applying the theme for a workaround.
 # What is this?
 This is a modified Spotify stock theme that:
 - [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
