@@ -18,15 +18,14 @@ This is a Spicetify theme which:
 
 # Installation
 
-## 1. Automatic installation for Windows users
-- Run the [install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/install.ps1) which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional). <br>
+## 1. Automatic installation/updates for Windows users
+### Installation
+Run the [install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/install.ps1) which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional). <br>
 
 > Note: Git and Spicetify CLI are required for the theme to be installed. However, their installations can be cancelled if already installed.
 
 ### Updating
 You can fetch the latest version of this theme by running the [update script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/update.ps1).
-
-> Note: I'm not very good at PowerShell scripting and if you face any errors, please create an issue.
 
 ## 2. Manual installation for all users
  ### 1. Installing Spicetify CLI
