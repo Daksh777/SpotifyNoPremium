@@ -52,7 +52,7 @@ if ($spice -eq 'Yes') {
  Write-Host "`n Installed Spicetify CLI`n"
  RefreshPath
  Write-Host "Installing the theme`n"
- cd "$(spicetify -c | Split-Path)\Themes"
+ Set-Location "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
  spicetify restore
@@ -71,9 +71,9 @@ Add-Type -AssemblyName PresentationFramework
 $bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (Recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
 
 if ($bts -eq 'Yes') {
-Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.bat" -OutFile "SpotifyNoPremium.bat"
-cmd.exe /c ".\SpotifyNoPremium.bat"
-Remove-Item "SpotifyNoPremium.bat"
+Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.ps1" -OutFile "SpotifyNoPremium.ps1"
+.\SpotifyNoPremium.ps1
+Remove-Item "SpotifyNoPremium.ps1"
 }
 
 if ($bts -eq 'No') {
