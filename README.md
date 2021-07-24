@@ -20,12 +20,14 @@ This is a Spicetify theme which:
 
 ## 1. Automatic installation/updates for Windows users
 ### Installation
-Run the [install script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/install.ps1) which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional). <br>
+Run the `install.ps1` script which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional): <br>
+[[CLICK HERE TO DOWNLOAD]](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/install.ps1) <br>
 
 > Note: Git and Spicetify CLI are required for the theme to be installed. However, their installations can be cancelled if already installed.
 
 ### Updating
-You can fetch the latest version of this theme by running the [update script](https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/update.ps1).
+You can fetch the latest version of this theme by running the `update.ps1` script: <br>
+[[CLICK HERE TO DOWNLOAD]](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/update.ps1)
 
 ## 2. Manual installation for all users
  ### 1. Installing Spicetify CLI
@@ -50,5 +52,6 @@ git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 spicetify apply
 ```
-### 3. Installing BlockTheSpot (Optional)
-Use [BlockTheSpot.bat](https://raw.githubusercontent.com/Daksh777/BlockTheSpot/1e0a272133b88ca44cd5d7523f5b2ce6f59a1fd0/BlockTheSpot.bat) to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot
+### 3. Installing BlockTheSpot (Optional, Windows only)
+Use `SpotifyNoPremium.bat` to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot <br>
+[[CLICK HERE TO DOWNLOAD]](https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.bat)
