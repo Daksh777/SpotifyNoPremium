@@ -25,11 +25,6 @@
   display: none;
 }
 
-div.GlueDropTarget.personal-library {
-  padding: none !important;
-  padding-right: 25px !important;
-}
-
 /* Pointer cursors for accessibility */
 .show-followButton-button,
 .main-dropDown-dropDown,
