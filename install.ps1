@@ -37,7 +37,7 @@ if ($spice -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
  Write-Host "Installing theme`n"
  spicetify upgrade
- cd "$(spicetify -c | Split-Path)\Themes"
+ Set-Location "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
  spicetify restore
