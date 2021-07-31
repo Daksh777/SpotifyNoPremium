@@ -57,3 +57,12 @@
 .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
   display: none !important;
 }
+
+/*Remove download buttons*/
+.x-downloadButton-DownloadButton{
+  display:none;
+}
+
+.main-contextMenu-menuItem:nth-of-type(8) {
+  display: none !important;
+}
