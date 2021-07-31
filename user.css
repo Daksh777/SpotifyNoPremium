@@ -63,6 +63,6 @@
   display:none;
 }
 
-.main-contextMenu-menuItem:nth-of-type(8) {
+.main-contextMenu-disabled {
   display: none !important;
 }
