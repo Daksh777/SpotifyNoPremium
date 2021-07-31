@@ -63,6 +63,6 @@
   display:none;
 }
 
-.main-contextMenu-disabled:not([as=a])[as=span] {
+.main-contextMenu-disabled:not([as=a]) {
   display: none !important;
 }
