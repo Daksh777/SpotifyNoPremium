@@ -35,8 +35,12 @@ $spice = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your s
 
 if ($spice -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
- Write-Host "Installing theme`n"
+ Write-Host "`nInstalling Spicetify fix`n"
  spicetify upgrade
+ Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch1/spicetify-win-x64.exe" -OutFile "spicetify.exe"
+ Move-Item -Path spicetify.exe -Destination $home\.spicetify\spicetify.exe -Force
+ Write-Host "Installing theme`n"
+ spicetify config disable_sentry 0
  Set-Location "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
@@ -49,13 +53,16 @@ if ($spice -eq 'Yes') {
  if ($spice -eq 'No') {
  Write-Host "`nInstalling Spicetify CLI`n"
  Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
+ Write-Host "`nInstalling Spicetify fix`n"
+ Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch1/spicetify-win-x64.exe" -OutFile "spicetify.exe"
+ Move-Item -Path spicetify.exe -Destination $home\.spicetify\spicetify.exe -Force
+ spicetify config disable_sentry 0
  Write-Host "`n Installed Spicetify CLI`n"
  RefreshPath
  Write-Host "Installing the theme`n"
  Set-Location "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
- spicetify restore
  spicetify clear
  spicetify backup apply
  Write-Host "`n Installed theme successfully"
