@@ -37,8 +37,11 @@ if ($spice -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
  Write-Host "`nInstalling Spicetify fix`n"
  spicetify upgrade
- Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch2/spicetify-win-x64.exe" -OutFile "spicetify.exe"
- Move-Item -Path spicetify.exe -Destination $home\.spicetify\spicetify.exe -Force
+ Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
+ Expand-Archive -Path spicetify-fix.zip
+ Remove-Item "spicetify-fix.zip"
+ Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
+ Remove-Item spicetify-fix -Recurse -Force
  Write-Host "Installing theme`n"
  spicetify config disable_sentry 0
  Set-Location "$(spicetify -c | Split-Path)\Themes"
@@ -54,8 +57,11 @@ if ($spice -eq 'Yes') {
  Write-Host "`nInstalling Spicetify CLI`n"
  Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
  Write-Host "`nInstalling Spicetify fix`n"
- Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch2/spicetify-win-x64.exe" -OutFile "spicetify.exe"
- Move-Item -Path spicetify.exe -Destination $home\.spicetify\spicetify.exe -Force
+ Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
+ Expand-Archive -Path spicetify-fix.zip
+ Remove-Item "spicetify-fix.zip"
+ Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
+ Remove-Item spicetify-fix -Recurse -Force
  spicetify config disable_sentry 0
  Write-Host "`n Installed Spicetify CLI`n"
  RefreshPath
