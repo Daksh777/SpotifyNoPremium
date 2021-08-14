@@ -6,7 +6,6 @@ Website: https://daksh.eu.org
 Write-Host "Updating theme from GitHub repo"
 Set-Location "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull origin
-spicetify update
 
 Write-Host "`nInstalling Spicetify fix"
 Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
@@ -14,6 +13,10 @@ Expand-Archive -Path spicetify-fix.zip
 Remove-Item "spicetify-fix.zip"
 Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
 Remove-Item spicetify-fix -Recurse -Force
+spicetify config disable_sentry 0
+spicetify restore
+spicetify clear
+spicetify backup apply
 
 Write-Host "`nUpdated theme successfully"
 
