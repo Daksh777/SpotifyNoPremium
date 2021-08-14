@@ -8,6 +8,13 @@ Set-Location "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull origin
 spicetify update
 
+Write-Host "`nInstalling Spicetify fix"
+Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
+Expand-Archive -Path spicetify-fix.zip
+Remove-Item "spicetify-fix.zip"
+Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
+Remove-Item spicetify-fix -Recurse -Force
+
 Write-Host "`nUpdated theme successfully"
 
 Add-Type -AssemblyName PresentationFramework
