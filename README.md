@@ -1,4 +1,4 @@
-## ⚠ Please re-run the updated [install.ps1](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/install.ps1) script if you are getting a blank screen in Spotify after applying the theme. Also, have a look at [#13](https://github.com/Daksh777/SpotifyNoPremium/issues/13#issuecomment-891503806) for more information.
+## ⚠ Please re-run the updated [install.ps1](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/install.ps1) or [update.ps1](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/update.ps1) script if you are getting a blank screen in Spotify after applying the theme. Also, have a look at [#13](https://github.com/Daksh777/SpotifyNoPremium/issues/13#issuecomment-891503806) for more information.
 # Features
 This is a Spicetify theme which:
 - [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
