@@ -23,7 +23,7 @@ This is a Spicetify theme which:
 Run the `install.ps1` script which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional): <br>
 [[CLICK HERE TO DOWNLOAD]](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/install.ps1) <br>
 
-> Note: Git and Spicetify CLI are required for the theme to be installed. However, their installations can be cancelled if already installed.
+> Note: Git and Spicetify CLI are required for the theme to be installed. However, their installations are skippable if already installed so the script will only install the theme.
 
 ### Updating
 You can fetch the latest version of this theme by running the `update.ps1` script: <br>
