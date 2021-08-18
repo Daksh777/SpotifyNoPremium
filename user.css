@@ -53,16 +53,38 @@
 }
 
 
-/*Home page ad section*/
+/* Home page ad section */
 .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
   display: none !important;
 }
 
-/*Remove download buttons*/
+/* Remove download buttons */
 .x-downloadButton-DownloadButton{
   display:none;
 }
 
 .main-contextMenu-disabled:not([as=a]) {
   display: none !important;
+}
+
+/* For update v1.66+ */
+
+/* Upgrade button */
+.EQ28Qdia9j_Xzdi3zX_q {
+  display: none !important
+}
+
+/* Ad placeholder */
+.snMc3rl8H2pM9cqkTpQ6 {
+  display: none !important
+}
+
+/* Context menu upgrade button */
+.tGu6COgM3S0NqMyh5Jx0 a[href="https://www.spotify.com/premium/"] {
+  display: none !important
+}
+
+/* Download buttons */
+._GVuKFHd7xr1QUKi_aWH {
+  display: none !important
 }
