@@ -100,6 +100,11 @@
   display: none !important
 }
 
+/* Find more button scale on hover */
+.tJAIYSfsDs3HsXDAPenF:hover {
+  transform: scale(1.06)
+}
+
 /* Pointer cursors for accessibility */
 .OBaPDV8g5lhQbNPmIEwf,
 ._S0gp4_8E3h4YCh9EAY9,
@@ -112,6 +117,17 @@
 .__1BGhJvHnvqYTPyG074,
 .h1OzWpjBctL_0cZqc4_w,
 .kyn0AY4_gXWvbdivdFgP,
-.kJVSjS2_BaEzRIoxwEhP {
+.kJVSjS2_BaEzRIoxwEhP,
+.mnhCDMSoY7L0E85V51mj,
+.QzuziJ2jGf1gnQA0IAU4,
+.jn05jgnCWyQjLZKqyKFa,
+.YFghzhgfbeZjLqvWpGN3,
+.XP_gp8Z91Ji6qbery2w3,
+._1bg4_fL__odhCd6G_B2,
+.tJAIYSfsDs3HsXDAPenF,
+._xAwo5THLGLKCTj5z4fF,
+.hzuVs5WHF7XZSJtOi_9H,
+.tIriT4RktlpCPFsZWXn2,
+.bC6V9kuel2ZewnjMAtZm {
   cursor: pointer !important
 }
