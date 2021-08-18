@@ -99,3 +99,11 @@
 ._qjkLyY1fy0hwCfzDZP7[aria-disabled=true] {
   display: none !important
 }
+
+/* Pointer cursors for accessibility */
+.OBaPDV8g5lhQbNPmIEwf,
+._S0gp4_8E3h4YCh9EAY9,
+._qjkLyY1fy0hwCfzDZP7,
+.Xo36XRWGIbAh4SIj9FQB {
+  cursor: pointer !important
+}
