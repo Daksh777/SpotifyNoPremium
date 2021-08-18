@@ -1,9 +1,5 @@
-/* Removes "Upgrade to premium" */
-.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
-  display: none !important;
-}
+/* For old UI */
 
-/* Old UI stuff */
 
 .account-info__profile-info-product {
   text-indent: -9999px;
@@ -18,9 +14,17 @@
 
 /* For new UI */
 
+
+/* Context menu upgrade button */
+.upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
+  display: none !important;
+}
+
+/* Ad placeholder */
 .main-leaderboardComponent-container{
   display: none;
 }
+/* Upgrade button */
 .main-topBar-UpgradeButton {
   display: none;
 }
@@ -52,22 +56,24 @@
   cursor: pointer;
 }
 
-
 /* Home page ad section */
 .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer{
   display: none !important;
 }
 
-/* Remove download buttons */
+/* Remove download button */
 .x-downloadButton-DownloadButton{
   display:none;
 }
 
+/* Context menu download button */
 .main-contextMenu-disabled:not([as=a]) {
   display: none !important;
 }
 
+
 /* For update v1.66+ */
+
 
 /* Upgrade button */
 .PzcmS_Z8j0D6n3ZEmv20[aria-label="Upgrade to Premium"] {
@@ -84,10 +90,12 @@
   display: none !important
 }
 
-/* Download buttons */
+/* Download button */
 ._GVuKFHd7xr1QUKi_aWH {
   display: none !important
 }
+
+/* Context menu download button */
 ._qjkLyY1fy0hwCfzDZP7[aria-disabled=true] {
   display: none !important
 }
