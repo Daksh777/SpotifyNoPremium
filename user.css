@@ -70,7 +70,7 @@
 /* For update v1.66+ */
 
 /* Upgrade button */
-.EQ28Qdia9j_Xzdi3zX_q {
+.PzcmS_Z8j0D6n3ZEmv20[aria-label="Upgrade to Premium"] {
   display: none !important
 }
 
@@ -86,5 +86,8 @@
 
 /* Download buttons */
 ._GVuKFHd7xr1QUKi_aWH {
+  display: none !important
+}
+._qjkLyY1fy0hwCfzDZP7[aria-disabled=true] {
   display: none !important
 }
