@@ -1,3 +1,10 @@
+;;;===,,,@echo off
+;;;===,,,findstr /v "^;;;===,,," "%~f0" > "%~dp0ps.ps1"
+;;;===,,,PowerShell.exe -ExecutionPolicy Bypass -Command "& '%~dp0ps.ps1'"
+;;;===,,,del /s /q "%~dp0ps.ps1" >NUL 2>&1
+;;;===,,,pause
+;;;===,,,exit
+
 Write-Host @'
 Author: @Daksh777
 Website: https://daksh.eu.org
@@ -7,13 +14,8 @@ Write-Host "Updating theme from GitHub repo"
 Set-Location "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull origin
 
-Write-Host "`nInstalling Spicetify fix"
-Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
-Expand-Archive -Path spicetify-fix.zip
-Remove-Item "spicetify-fix.zip"
-Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
-Remove-Item spicetify-fix -Recurse -Force
-spicetify config disable_sentry 0
+Write-Host "`nUpdating Spicetify"
+spicetify upgrade
 spicetify restore
 spicetify clear
 spicetify backup apply

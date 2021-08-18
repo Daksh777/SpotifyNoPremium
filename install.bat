@@ -1,3 +1,10 @@
+;;;===,,,@echo off
+;;;===,,,findstr /v "^;;;===,,," "%~f0" > "%~dp0ps.ps1"
+;;;===,,,PowerShell.exe -ExecutionPolicy Bypass -Command "& '%~dp0ps.ps1'"
+;;;===,,,del /s /q "%~dp0ps.ps1" >NUL 2>&1
+;;;===,,,pause
+;;;===,,,exit
+
 Write-Host @'
 Author: @Daksh777
 Website: https://daksh.eu.org
@@ -35,15 +42,8 @@ $spice = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your s
 
 if ($spice -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
- Write-Host "`nInstalling Spicetify fix`n"
  spicetify upgrade
- Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
- Expand-Archive -Path spicetify-fix.zip
- Remove-Item "spicetify-fix.zip"
- Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
- Remove-Item spicetify-fix -Recurse -Force
  Write-Host "Installing theme`n"
- spicetify config disable_sentry 0
  Set-Location "$(spicetify -c | Split-Path)\Themes"
  git clone https://github.com/Daksh777/SpotifyNoPremium
  spicetify config current_theme SpotifyNoPremium
@@ -56,13 +56,6 @@ if ($spice -eq 'Yes') {
  if ($spice -eq 'No') {
  Write-Host "`nInstalling Spicetify CLI`n"
  Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
- Write-Host "`nInstalling Spicetify fix`n"
- Invoke-WebRequest -Uri "https://github.com/itsmeowForks/spicetify-cli/releases/download/v2.5.0-patch4/spicetify-2.5.0-itsmeow-patch4-windows-x64.zip" -OutFile "spicetify-fix.zip"
- Expand-Archive -Path spicetify-fix.zip
- Remove-Item "spicetify-fix.zip"
- Copy-Item -Path spicetify-fix\* -Destination $home\.spicetify -Recurse -Force
- Remove-Item spicetify-fix -Recurse -Force
- spicetify config disable_sentry 0
  Write-Host "`n Installed Spicetify CLI`n"
  RefreshPath
  Write-Host "Installing the theme`n"
