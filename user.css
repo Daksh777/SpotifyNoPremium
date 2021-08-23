@@ -133,3 +133,8 @@
 ._kySQxSksHLKYgofFfhl {
   cursor: pointer !important
 }
+
+/* Remove unnatural padding between create playlist and library button */
+.u7oC25XjY_zFHiqpit_W {
+  margin-top: 0 !important
+}
