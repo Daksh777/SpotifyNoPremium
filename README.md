@@ -33,11 +33,7 @@ You can fetch the latest version of this theme by running the `update.bat` scrip
  ### 1. Installing Spicetify CLI
  Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation).
 
-### 2. Install Spicetify temporary fix/patch: 
-Spicetify doesn't work on version higher than v1.1.62.583.gdac868ed-a, however there is a temporary fix/patch for it: https://github.com/itsmeowForks/spicetify-cli/releases <br>
-Check [#13](https://github.com/Daksh777/SpotifyNoPremium/issues/13#issuecomment-891503806) for more info.
- 
- ### 3. Installing Theme
+ ### 2. Installing Theme
  
 #### Linux and MacOS:
 In **Bash**:
@@ -56,6 +52,6 @@ git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 spicetify apply
 ```
-### 4. Installing BlockTheSpot (Optional, Windows only)
+### 3. Installing BlockTheSpot (Optional, Windows only)
 Use `SpotifyNoPremium.ps1` to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot <br>
 [[CLICK HERE TO DOWNLOAD]](https://gitcdn.link/repo/Daksh777/BlockTheSpot/master/SpotifyNoPremium.ps1)
