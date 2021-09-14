@@ -1,18 +1,4 @@
-/* For old UI */
-
-
-.account-info__profile-info-product {
-  text-indent: -9999px;
-  line-height: 0;
-}
-.account-info__profile-info-product:after {
-  content: 'Spotify Premium';
-  text-indent: 0;
-  display: block;
-  line-height: initial;
-}
-
-/* For new UI */
+/* For versions below v1.66 */
 
 
 /* Context menu upgrade button */
@@ -139,4 +125,9 @@
 /* Remove unnatural padding between create playlist and library button */
 .u7oC25XjY_zFHiqpit_W {
   margin-top: 0 !important
+}
+
+/* Remove homepage ad banner */
+.k6onUQZSeZIsonJ4cSpK {
+  display: none !important
 }
