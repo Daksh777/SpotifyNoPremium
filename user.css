@@ -131,3 +131,8 @@
 .k6onUQZSeZIsonJ4cSpK {
   display: none !important
 }
+
+/* Remove sponsor ads in playlists */
+.sponsor-container {
+  display: none !important
+}
