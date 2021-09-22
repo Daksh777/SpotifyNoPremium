@@ -122,11 +122,6 @@
   cursor: pointer !important
 }
 
-/* Remove unnatural padding between create playlist and library button */
-.u7oC25XjY_zFHiqpit_W {
-  margin-top: 0 !important
-}
-
 /* Remove homepage ad banner */
 .k6onUQZSeZIsonJ4cSpK {
   display: none !important
@@ -134,5 +129,10 @@
 
 /* Remove sponsor ads in playlists */
 .sponsor-container {
+  display: none !important
+}
+
+/* Remove ad overlay on app startup */
+.GenericModal__overlay--afterOpen {
   display: none !important
 }
