@@ -131,8 +131,3 @@
 .sponsor-container {
   display: none !important
 }
-
-/* Remove ad overlay on app startup */
-.GenericModal__overlay--afterOpen {
-  display: none !important
-}
