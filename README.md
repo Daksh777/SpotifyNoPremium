@@ -18,6 +18,7 @@ This is a Spicetify theme which:
 # Installation
 
 ## 1. Automatic installation/updates for Windows users
+##### **Note: If you're on Windows 8.1 or lower, please install Powershell v5.1 since the automatic installation script does not support Powershell versions below v5. <br> Download here: https://www.microsoft.com/en-us/download/details.aspx?id=54616 <br> More info: [#30](https://github.com/Daksh777/SpotifyNoPremium/issues/30#issuecomment-962822618)**
 ### Installation
 Run the `install.bat` script which installs [**Git**](https://git-scm.com/download/win) + [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional): <br>
 [[CLICK HERE TO DOWNLOAD]](https://gitcdn.link/repo/Daksh777/SpotifyNoPremium/main/install.bat) <br>
