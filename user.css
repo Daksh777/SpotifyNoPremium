@@ -147,15 +147,21 @@
 
 /* Ad placeholder */
 .Aqm75shq2WwHcNTMz2Yq {
-  display: none
+  display: none !important
 }
 
 /* Download button */ 
 .q6RbWlHDlbjkbXsca2Yd {
-  display: none
+  display: none !important
 }
 
 /* Context menu download button */
 .___vortwLX0Vo7zvuAq4[aria-disabled="true"] {
-  display: none
+  display: none !important
+}
+
+/* Fix height in playlist scroll */
+.iDlSBR5JgCntHwvGPaQk {
+  height: auto !important;
+  contain: unset !important
 }
