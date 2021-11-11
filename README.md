@@ -1,3 +1,5 @@
+##### Last tested version: `1.1.72.439.gc253025e`
+
 # Features
 This is a Spicetify theme which:
 - [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
