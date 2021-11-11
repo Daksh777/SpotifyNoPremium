@@ -165,3 +165,8 @@
   height: auto !important;
   contain: unset !important
 }
+
+/* Remove top padding above create playlist button */
+.vM_HBZN3SvOzSVabgF4l {
+  margin-top: unset !important
+}
