@@ -131,3 +131,31 @@
 .sponsor-container {
   display: none !important
 }
+
+
+/* For update 1.1.72 or above */
+
+/* Upgrade button */
+.MgL79SorehxR01FG_x8G[aria-label="Upgrade to Premium"] {
+  display: none !important
+}
+
+/* Context menu upgrade button */
+.___vortwLX0Vo7zvuAq4[href="https://www.spotify.com/premium/"] {
+  display: none !important
+}
+
+/* Ad placeholder */
+.Aqm75shq2WwHcNTMz2Yq {
+  display: none
+}
+
+/* Download button */ 
+.q6RbWlHDlbjkbXsca2Yd {
+  display: none
+}
+
+/* Context menu download button */
+.___vortwLX0Vo7zvuAq4[aria-disabled="true"] {
+  display: none
+}
