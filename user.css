@@ -163,3 +163,8 @@
 .vM_HBZN3SvOzSVabgF4l {
   margin-top: unset !important
 }
+
+/* Remove premium offer overlay (testing) */
+body > div:nth-child(18) > div {
+  display: none
+}
