@@ -1,6 +1,5 @@
 /* For versions below v1.66 */
 
-
 /* Context menu upgrade button */
 .upgrade-button, button[data-menu-item="upgrade-account"], .main-contextMenu-menuItem a[href="https://www.spotify.com/premium/"], button[id="upgradeAccount"] {
   display: none !important;
@@ -59,7 +58,6 @@
 
 
 /* For update v1.66+ */
-
 
 /* Upgrade button */
 .PzcmS_Z8j0D6n3ZEmv20[aria-label="Upgrade to Premium"] {
@@ -159,6 +157,7 @@
 .___vortwLX0Vo7zvuAq4[aria-disabled="true"] {
   display: none !important
 }
+
 /* Remove top padding above create playlist button */
 .vM_HBZN3SvOzSVabgF4l {
   margin-top: unset !important
@@ -167,4 +166,37 @@
 /* Remove premium offer overlay (testing) */
 body > div:nth-child(18) > div {
   display: none
+}
+
+
+/* For update 1.1.74+ */
+
+/* Ad placeholder */
+.X871RxPwx9V0MqpQdMom {
+  display: none
+}
+
+/* Upgrade button */
+.Qt5xfSWikz6CLU8Vobxs[aria-label="Upgrade to Premium"] {
+  display: none
+}
+
+/* Context menu upgrade button */
+.DuEPSADpSwCcO880xjUG a[href="https://www.spotify.com/premium/"] {
+  display: none
+}
+
+/* Download button */
+.BKsbV2Xl786X9a09XROH {
+  display: none
+}
+
+/* Context menu download button */
+.wC9sIed7pfp47wZbmU6m[aria-disabled="true"] {
+  display: none
+}
+
+/* Remove top padding above create playlist button */
+.eFQFeXVbY8rrcTagg0oH {
+  margin-top: 0 !important
 }
