@@ -163,11 +163,6 @@
   margin-top: unset !important
 }
 
-/* Remove premium offer overlay (testing) */
-body > div:nth-child(18) > div {
-  display: none
-}
-
 
 /* For update 1.1.74+ */
 
