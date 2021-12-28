@@ -10,6 +10,8 @@ Author: @Daksh777
 Website: https://daksh.eu.org
 '@`n
 
+Add-Type -AssemblyName Microsoft.VisualBasic
+
 Write-Host "Updating theme from GitHub repo"
 Set-Location "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull origin
@@ -22,8 +24,7 @@ spicetify backup apply
 
 Write-Host "`nUpdated theme successfully"
 
-Add-Type -AssemblyName PresentationFramework
-$bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (Recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
+$bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal,DefaultButton1', 'BlockTheSpot Installation');
 
 if ($bts -eq 'Yes') {
 Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.ps1" -OutFile "SpotifyNoPremium.ps1"

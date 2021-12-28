@@ -1,10 +1,3 @@
-;;;===,,,@echo off
-;;;===,,,findstr /v "^;;;===,,," "%~f0" > "%~dp0ps.ps1"
-;;;===,,,PowerShell.exe -ExecutionPolicy Bypass -Command "& '%~dp0ps.ps1'"
-;;;===,,,del /s /q "%~dp0ps.ps1" >NUL 2>&1
-;;;===,,,pause
-;;;===,,,exit
-
 Write-Host @'
 Author: @Daksh777
 Website: https://daksh.eu.org
@@ -95,7 +88,7 @@ if ($spice -eq 'Yes') {
 }
 
 
-$bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'BlockTheSpot Installation');
+$bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal,DefaultButton1', 'BlockTheSpot Installation');
 
 if ($bts -eq 'Yes') {
 Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.ps1" -OutFile "SpotifyNoPremium.ps1"
