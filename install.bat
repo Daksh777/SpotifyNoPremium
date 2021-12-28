@@ -10,14 +10,37 @@ Author: @Daksh777
 Website: https://daksh.eu.org
 '@`n
 
+Add-Type -AssemblyName Microsoft.VisualBasic
+
+if ($PSVersionTable.PSVersion.Major -ge 7)
+{
+  Import-Module Appx -UseWindowsPowerShell
+}
+
+if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic)
+{
+  Write-Host "The Microsoft Store version of Spotify has been detected which is not supported."
+
+  $store = [Microsoft.VisualBasic.Interaction]::MsgBox('Uninstall MS Store Spotify?', 'YesCancel,MsgBoxSetForeground,Critical,SystemModal', 'MS Store Spotify is not supported');
+  if ($store -eq 'Yes')
+  {
+    Write-Host "Uninstalling Spotify.`n"
+    Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
+  }
+  else
+  {
+    Write-Host "Operation Cancelled"
+    exit
+  }
+}
+
 function RefreshPath {
     $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") +
                 ";" +
                 [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
-Add-Type -AssemblyName PresentationFramework
-$git = [System.Windows.MessageBox]::Show('Is Git installed in your system?', 'Git Installation', 'YesNoCancel');
+$git = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Git installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Git Installation');
 
 if ($git -eq 'Yes') {
 Write-Host "`nSkipping Git installation"
@@ -37,8 +60,7 @@ exit
 }
 
 
-Add-Type -AssemblyName PresentationFramework
-$spice = [System.Windows.MessageBox]::Show('Is Spicetify CLI installed in your system?', 'Spicetify CLI Installtion', 'YesNoCancel');
+$spice = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Spicetify CLI installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Spicetify CLI Installtion');
 
 if ($spice -eq 'Yes') {
  Write-Host "`nSkipping Spicetify installation`n"
@@ -73,8 +95,7 @@ if ($spice -eq 'Yes') {
 }
 
 
-Add-Type -AssemblyName PresentationFramework
-$bts = [System.Windows.MessageBox]::Show('Do you want to install BlockTheSpot to block ads? (Recommended)', 'BlockTheSpot Installation', 'YesNoCancel');
+$bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'BlockTheSpot Installation');
 
 if ($bts -eq 'Yes') {
 Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.ps1" -OutFile "SpotifyNoPremium.ps1"
