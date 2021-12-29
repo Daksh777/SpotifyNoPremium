@@ -40,24 +40,15 @@ function RefreshPath {
                 [System.Environment]::GetEnvironmentVariable("Path","User")
 }
 
-$git = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Git installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Git Installation');
 
-if ($git -eq 'Yes') {
-Write-Host "`nSkipping Git installation"
-}
-
-if ($git -eq 'No') {
-Write-Host "`nDownloading Git installer"
-Start-Process "https://git-scm.com/download/win"
-Write-Host "Please install Git using the downloaded installer and come back here once done.`n"
-Read-Host "If Git was installed, press enter to continue"
-RefreshPath
-}
-
-if ($git -eq 'Cancel') {
-Write-Host "`nOperation Cancelled"
-exit
-}
+Write-Host 'Downloading files from GitHub repository'
+Invoke-WebRequest -Uri 'https://github.com/Daksh777/SpotifyNoPremium/archive/main.zip' -OutFile 'temp.zip'
+Expand-Archive 'temp.zip'
+Remove-Item 'temp.zip'
+Rename-Item -Path temp/SpotifyNoPremium-main -NewName SpotifyNoPremium
+Move-Item -Path temp/SpotifyNoPremium -Destination "$(spicetify -c | Split-Path)\Themes" -Force
+Remove-Item temp -Recurse -Force
+Write-Host "`nDownloaded successfully"
 
 
 $spice = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Spicetify CLI installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Spicetify CLI Installtion');
