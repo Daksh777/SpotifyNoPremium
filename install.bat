@@ -17,20 +17,32 @@ if ($PSVersionTable.PSVersion.Major -ge 7)
   Import-Module Appx -UseWindowsPowerShell
 }
 
-if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic)
-{
+if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic) {
   Write-Host "The Microsoft Store version of Spotify has been detected which is not supported."
-
   $store = [Microsoft.VisualBasic.Interaction]::MsgBox('Uninstall MS Store Spotify?', 'YesCancel,MsgBoxSetForeground,Critical,SystemModal', 'MS Store Spotify is not supported');
-  if ($store -eq 'Yes')
-  {
+  
+  if ($store -eq 'Yes') {
     Write-Host "Uninstalling Spotify.`n"
     Get-AppxPackage -Name SpotifyAB.SpotifyMusic | Remove-AppxPackage
+    $installspot = [Microsoft.VisualBasic.Interaction]::MsgBox('Install official Spotify?', 'YesCancel,MsgBoxSetForeground,Critical,SystemModal', 'Official Spotify installation');
+    
+    if ($installspot -eq 'Yes') {
+      Write-Host 'Downloading the latest Spotify full setup, please wait...'
+      $spotifySetupFilePath = Join-Path -Path $PWD -ChildPath 'SpotifyFullSetup.exe'
+      Invoke-WebRequest -Uri 'https://download.scdn.co/SpotifyFullSetup.exe' -OutFile $spotifysetupfilepath
+      Start-Process $spotifySetupFilePath
+      }
+
+    else {
+        Write-Host "Operation Cancelled"
+        exit
+        }
   }
-  else
-  {
-    Write-Host "Operation Cancelled"
-    exit
+
+  else {
+
+        Write-Host "Operation Cancelled"
+        exit
   }
 }
 
@@ -41,6 +53,27 @@ function RefreshPath {
 }
 
 
+$spice = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Spicetify CLI installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Spicetify CLI Installtion');
+
+if ($spice -eq 'Yes') {
+ Write-Host "`nSkipping Spicetify installation and checking for updates `n"
+ RefreshPath
+ spicetify restore
+ spicetify upgrade
+ }
+
+if ($spice -eq 'No') {
+ Write-Host "`nInstalling Spicetify CLI`n"
+ Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
+ Write-Host "`n Installed Spicetify CLI`n"
+ RefreshPath
+ }
+
+if ($spice -eq 'Cancel') {
+ Write-Host "`nOperation Cancelled"
+ exit
+}
+
 Write-Host 'Downloading files from GitHub repository'
 Invoke-WebRequest -Uri 'https://github.com/Daksh777/SpotifyNoPremium/archive/main.zip' -OutFile 'temp.zip'
 Expand-Archive 'temp.zip'
@@ -50,40 +83,12 @@ Move-Item -Path temp/SpotifyNoPremium -Destination "$(spicetify -c | Split-Path)
 Remove-Item temp -Recurse -Force
 Write-Host "`nDownloaded successfully"
 
+Write-Host 'Setting theme'
+Set-Location "$(spicetify -c | Split-Path)\Themes"
+spicetify config current_theme SpotifyNoPremium
+spicetify backup apply
+Write-Host "`nInstalled successfully"
 
-$spice = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Spicetify CLI installed in your system?', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal', 'Spicetify CLI Installtion');
-
-if ($spice -eq 'Yes') {
- Write-Host "`nSkipping Spicetify installation`n"
- spicetify upgrade
- Write-Host "Installing theme`n"
- Set-Location "$(spicetify -c | Split-Path)\Themes"
- git clone https://github.com/Daksh777/SpotifyNoPremium
- spicetify config current_theme SpotifyNoPremium
- spicetify restore
- spicetify clear
- spicetify backup apply
- Write-Host "`nInstalled successfully"
- }
-
- if ($spice -eq 'No') {
- Write-Host "`nInstalling Spicetify CLI`n"
- Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
- Write-Host "`n Installed Spicetify CLI`n"
- RefreshPath
- Write-Host "Installing the theme`n"
- Set-Location "$(spicetify -c | Split-Path)\Themes"
- git clone https://github.com/Daksh777/SpotifyNoPremium
- spicetify config current_theme SpotifyNoPremium
- spicetify clear
- spicetify backup apply
- Write-Host "`n Installed theme successfully"
- }
-
- if ($spice -eq 'Cancel') {
- Write-Host "`nOperation Cancelled"
- exit
-}
 
 
 $bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal,DefaultButton1', 'BlockTheSpot Installation');
