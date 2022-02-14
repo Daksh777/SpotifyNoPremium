@@ -199,3 +199,8 @@
 button {
   cursor: pointer !important
 }
+
+ /* Remove upgrade button for v1.1.78 */
+.main-buttons-button[title="Upgrade to Premium"] {
+  display: none
+}
