@@ -204,3 +204,8 @@ button {
 .main-buttons-button[title="Upgrade to Premium"] {
   display: none
 }
+
+/* Remove sponsored playlist in homepage */
+.WiPggcPDzbwGxoxwLWFf {
+  display: none
+}
