@@ -21,6 +21,9 @@ if ($css -eq 'No') {
 Get-ChildItem "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Exclude .git | Remove-Item -Force
 
 Write-Host 'Downloading files from GitHub repository'
+if (-not (Test-Path -LiteralPath C:\Temp)) {
+    New-Item -Type Directory -Path C:\Temp | Out-Null
+}
 Set-Location C:\Temp
 Invoke-WebRequest -Uri 'https://github.com/Daksh777/SpotifyNoPremium/archive/main.zip' -OutFile 'temp.zip'
 Expand-Archive 'temp.zip'
