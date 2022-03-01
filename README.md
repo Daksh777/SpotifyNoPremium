@@ -1,4 +1,4 @@
-##### Last tested version: `1.1.79.763.gc2965cdf`
+##### Last tested version: `1.1.80.699.gc3dac750`
 
 # Features
 This is a Spicetify theme which:
