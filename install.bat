@@ -64,7 +64,7 @@ if ($spice -eq 'Yes') {
 
 if ($spice -eq 'No') {
  Write-Host "`nInstalling Spicetify CLI`n"
- Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expression
+ Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1" | Invoke-Expression
  Write-Host "`n Installed Spicetify CLI`n"
  RefreshPath
  }
