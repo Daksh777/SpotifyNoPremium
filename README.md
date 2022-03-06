@@ -1,3 +1,4 @@
+##### If you just updated to `1.1.80.699.gc3dac750`, please follow these instructions for a fix: [#46 (comment)](https://github.com/Daksh777/SpotifyNoPremium/issues/46#issuecomment-1059945231)
 ##### Last tested version: `1.1.80.699.gc3dac750`
 
 # Features
