@@ -5,6 +5,8 @@
 ;;;===,,,pause
 ;;;===,,,exit
 
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+
 Write-Host @'
 Author: @Daksh777
 Website: https://daksh.eu.org
