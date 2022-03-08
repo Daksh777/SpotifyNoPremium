@@ -5,7 +5,7 @@
 ;;;===,,,pause
 ;;;===,,,exit
 
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls"
 
 Write-Host @'
 Author: @Daksh777
