@@ -1,6 +1,6 @@
 {
     "name": "SpotifyNoPremium",
-    "description": "Modified Spotify stock theme that declutters Spotify UI and removes ads",
+    "description": "A cross-platform Spicetify theme which declutters Spotify stock UI and removes all ads.",
     "preview": "https://i.imgur.com/to8dzhO.jpg",
     "readme": "README.md",
     "usercss": "user.css",
