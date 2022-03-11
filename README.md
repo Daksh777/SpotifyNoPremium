@@ -3,7 +3,7 @@
 
 # Features
 This is a Spicetify theme which:
-- Removes all Spotify ads
+- Removes all Spotify ads ([Source](https://github.com/CharlieS1103/spicetify-extensions/blob/main/adblock/adblock.js))
 - Removes `Upgrade` button
 - Removes `Upgrade to Premium` entry in drop-down menu
 - Removes ad placeholders (in Home tab and above the now playing bar)
