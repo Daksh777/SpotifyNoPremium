@@ -42,21 +42,3 @@ spicetify clear
 spicetify backup apply
 
 Write-Host "`nUpdated theme successfully"
-
-$bts = [Microsoft.VisualBasic.Interaction]::MsgBox('Do you want to install BlockTheSpot to block ads? (Recommended)', 'YesNoCancel,MsgBoxSetForeground,Question,SystemModal,DefaultButton1', 'BlockTheSpot Installation');
-
-if ($bts -eq 'Yes') {
-Invoke-WebRequest -Uri "https://github.com/Daksh777/BlockTheSpot/raw/master/SpotifyNoPremium.ps1" -OutFile "SpotifyNoPremium.ps1"
-.\SpotifyNoPremium.ps1
-Remove-Item "SpotifyNoPremium.ps1"
-}
-
-if ($bts -eq 'No') {
- Write-Host "`nNot installing BlockTheSpot"
- exit
-}
-
- if ($spice -eq 'Cancel') {
- Write-Host "`nOperation Cancelled"
- exit
- }
