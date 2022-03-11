@@ -32,6 +32,7 @@ Expand-Archive 'temp.zip'
 Remove-Item 'temp.zip'
 Rename-Item -Path temp/SpotifyNoPremium-main -NewName SpotifyNoPremium
 Get-ChildItem temp/SpotifyNoPremium | Copy-Item -Destination "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Force -Recurse
+Move-Item -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" -Destination "$(spicetify -c | Split-Path)\Extensions" -Force
 Remove-Item temp -Recurse -Force
 Write-Host "`nDownloaded successfully"
 

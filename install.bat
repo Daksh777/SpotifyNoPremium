@@ -75,13 +75,14 @@ if ($spice -eq 'Cancel') {
  Write-Host "`nOperation Cancelled"
  exit
 }
-
+    
 Write-Host 'Downloading files from GitHub repository'
 Invoke-WebRequest -Uri 'https://github.com/Daksh777/SpotifyNoPremium/archive/main.zip' -OutFile 'temp.zip'
 Expand-Archive 'temp.zip'
 Remove-Item 'temp.zip'
 Rename-Item -Path temp/SpotifyNoPremium-main -NewName SpotifyNoPremium
-Move-Item -Path temp/SpotifyNoPremium -Destination "$(spicetify -c | Split-Path)\Themes" -Force
+Get-ChildItem temp/SpotifyNoPremium | Copy-Item -Destination "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Force -Recurse
+Move-Item -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" -Destination "$(spicetify -c | Split-Path)\Extensions" -Force
 Remove-Item temp -Recurse -Force
 Write-Host "`nDownloaded successfully"
 
