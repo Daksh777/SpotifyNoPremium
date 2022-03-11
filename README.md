@@ -3,13 +3,13 @@
 
 # Features
 This is a Spicetify theme which:
-- [Removes](https://github.com/Daksh777/BlockTheSpot) all Spotify ads (Windows only, optional)
+- Removes all Spotify ads
 - Removes `Upgrade` button
 - Removes `Upgrade to Premium` entry in drop-down menu
 - Removes ad placeholders (in Home tab and above the now playing bar)
 - Adds pointer cursors to clickable elements (See [#10](https://github.com/Daksh777/SpotifyNoPremium/discussions/10))
 
-> Note: Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
+> **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
 
 # Screenshots
 
@@ -44,6 +44,7 @@ In **Bash**:
 cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
+spicetify config extensions adblock.js
 spicetify apply
 ```
 
@@ -53,8 +54,6 @@ In **Powershell**:
 cd "$(spicetify -c | Split-Path)\Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
+spicetify config extensions adblock.js
 spicetify apply
 ```
-### 3. Installing BlockTheSpot (Optional, Windows only)
-Use `SpotifyNoPremium.ps1` to block Spotify ads and more, source: https://github.com/Daksh777/BlockTheSpot <br>
-[[CLICK HERE TO DOWNLOAD]](https://raw.githack.com/Daksh777/BlockTheSpot/master/SpotifyNoPremium.ps1)
