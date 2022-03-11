@@ -1,0 +1,9 @@
+{
+    "name": "SpotifyNoPremium",
+    "description": "Modified Spotify stock theme that declutters Spotify UI and removes ads",
+    "preview": "https://i.imgur.com/to8dzhO.jpg",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "include": ["https://raw.githubusercontent.com/Daksh777/SpotifyNoPremium/main/adblock.js"]
+}
