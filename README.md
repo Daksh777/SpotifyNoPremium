@@ -23,8 +23,10 @@ This is a Spicetify theme which:
 
 | Before | After |
 | ----------- | ----------- |
-| <img src="https://i.imgur.com/VAtMBYx.jpg"/> | <img src="https://i.imgur.com/g0heSZm.jpg"/> |
-| <img src="https://i.imgur.com/to8dzhO.jpg"/> | <img src="https://i.imgur.com/JDj5rvQ.jpg"/> |
+| <img src="https://i.imgur.com/o714XSp.png"/> | <img src="https://i.imgur.com/289Qq2v.png"/> |
+| <img src="https://i.imgur.com/HVjTHTO.png"/> | <img src="https://i.imgur.com/Nhy3OOJ.png"/> |
+
+<img src="https://i.imgur.com/kEffDy8.png">
 
 # Installation
 
