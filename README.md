@@ -32,26 +32,23 @@ This is a Spicetify theme which:
 ##### **Note: If you're on Windows 8.1 or lower, please install Powershell v5.1 since the automatic installation script does not support Powershell versions below v5. <br> Download here: https://www.microsoft.com/en-us/download/details.aspx?id=54616 <br> More info: [#30](https://github.com/Daksh777/SpotifyNoPremium/issues/30#issuecomment-962822618)**
 ### Installation
 Run the `install.bat` if you are installing for the the first time. <br>
-The script installs [**Spicetify CLI**](https://github.com/khanhas/spicetify-cli) + **the theme** + [**BlockTheSpot**](https://github.com/Daksh777/BlockTheSpot) (to block all Spotify ads, optional): <br>
 [[CLICK HERE TO DOWNLOAD]](https://raw.githack.com/Daksh777/SpotifyNoPremium/main/install.bat) <br>
 
 
 ### Updating
-You can fetch the latest version of this theme by running the `update.bat` script: <br>
+You can fetch the latest version of this theme by running the `update.bat` script <br>
 [[CLICK HERE TO DOWNLOAD]](https://raw.githack.com/Daksh777/SpotifyNoPremium/main/update.bat)
 
-## 2. Manual installation for all users
- ### 1. Installing Spicetify CLI
- Installation instructions for Windows, MacOS and Linux can be found [here](https://github.com/khanhas/spicetify-cli/wiki/Installation).
 
- ### 2. Installing Theme
- 
-#### Linux and MacOS:
+## 2. Manual installation for all users
+### Linux and MacOS:
 In **Bash**:
 ```bash
+curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
 cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
+cp "$(dirname "$(spicetify -c)")/Themes/SpotifyNoPremium/adblock.js" "$(dirname "$(spicetify -c)")/Extensions"
 spicetify config extensions adblock.js
 spicetify apply
 ```
@@ -59,9 +56,11 @@ spicetify apply
 #### Windows
 In **Powershell**:
 ```powershell
+Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.ps1" | Invoke-Expression
 cd "$(spicetify -c | Split-Path)\Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
+Copy-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" "$(spicetify -c | Split-Path)\Extensions"
 spicetify config extensions adblock.js
 spicetify apply
 ```
