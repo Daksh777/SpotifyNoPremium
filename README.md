@@ -17,8 +17,6 @@ This is a Spicetify theme which:
 - Removes ad placeholders (in Home tab and above the now playing bar)
 - Adds pointer cursors to clickable elements (See [#10](https://github.com/Daksh777/SpotifyNoPremium/discussions/10))
 
-> **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
-
 # Screenshots
 
 | Before | After |
@@ -43,6 +41,7 @@ You can fetch the latest version of this theme by running the `update.bat` scrip
 
 
 ## 2. Manual installation for all users
+> **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
 ### Linux and MacOS:
 In **Bash**:
 ```bash
