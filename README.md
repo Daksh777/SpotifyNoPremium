@@ -1,13 +1,14 @@
 # SpotifyNoPremium
-A cross-platform Spicetify theme which declutters Spotify stock UI and removes all ads.
+A cross-platform Spicetify theme which declutters removes all Spotify ads and declutters the stock UI. 
 
 ---
 We've switched to a cross-platform ad-blocking solution so make sure to use the latest `install.bat` to get the latest features
 
 ---
 
-##### If you just updated to `1.1.80.699.gc3dac750`, please follow these instructions for a fix: [#46 (comment)](https://github.com/Daksh777/SpotifyNoPremium/issues/46#issuecomment-1059945231)
-##### Last tested version: `1.1.80.699.gc3dac750`
+##### Last tested version: `1.1.81.604.gccacfc8c`
+##### If you see a blank/black screen, please follow this link for a fix: https://github.com/Daksh777/SpotifyNoPremium/issues/46#issuecomment-1059945231
+
 
 # Features
 This is a Spicetify theme which:
