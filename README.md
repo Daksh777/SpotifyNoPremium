@@ -1,6 +1,6 @@
 ##### Last tested version: `1.1.81.604.gccacfc8c`
 # SpotifyNoPremium
-A cross-platform Spicetify theme which removes all Spotify ads and declutters the stock UI. 
+A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
 
 ---
 We've switched to a cross-platform ad-blocking solution so make sure to use the latest `install.bat` to get the latest features <br> <br>
@@ -11,7 +11,7 @@ We've switched to a cross-platform ad-blocking solution so make sure to use the 
 
 # Features
 This is a Spicetify theme which:
-- Removes all Spotify ads ([Source](https://github.com/CharlieS1103/spicetify-extensions/blob/main/adblock/adblock.js))
+- Removes all audio, banner, sponsored and popup ads ([Source](https://github.com/CharlieS1103/spicetify-extensions/blob/main/adblock/adblock.js))
 - Removes `Upgrade` button
 - Removes `Upgrade to Premium` entry in drop-down menu
 - Removes ad placeholders (in Home tab and above the now playing bar)
