@@ -211,3 +211,8 @@ button {
 .hx2D0g_ursHte5bm62U2 {
   display: none
 }
+
+/* Remove top padding above create playlist button for 1.1.84+ */
+.LKgm9fCDTO7wqig_5U1q {
+  margin-top: 0 !important
+}
