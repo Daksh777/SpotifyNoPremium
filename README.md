@@ -32,12 +32,12 @@ This is a Spicetify theme which:
 ##### **Note: If you're on Windows 8.1 or lower, please install Powershell v5.1 since the automatic installation script does not support Powershell versions below v5. <br> Download here: https://www.microsoft.com/en-us/download/details.aspx?id=54616 <br> More info: [#30](https://github.com/Daksh777/SpotifyNoPremium/issues/30#issuecomment-962822618)**
 ### Installation
 Run the `install.bat` if you are installing for the the first time. <br>
-[[CLICK HERE TO DOWNLOAD]](https://raw.githack.com/Daksh777/SpotifyNoPremium/main/install.bat) <br>
+[[CLICK HERE TO DOWNLOAD]](https://daksh777.github.io/SpotifyNoPremium/install.bat) <br>
 
 
 ### Updating
 You can fetch the latest version of this theme by running the `update.bat` script <br>
-[[CLICK HERE TO DOWNLOAD]](https://raw.githack.com/Daksh777/SpotifyNoPremium/main/update.bat)
+[[CLICK HERE TO DOWNLOAD]](https://daksh777.github.io/SpotifyNoPremium/update.bat)
 
 
 ## 2. Manual installation for all users
