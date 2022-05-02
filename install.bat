@@ -6,6 +6,7 @@
 ;;;===,,,exit
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$ErrorActionPreference = [System.Management.Automation.ActionPreference]::Stop
 
 Write-Host @'
 Author: @Daksh777
@@ -75,23 +76,45 @@ if ($spice -eq 'Cancel') {
  Write-Host "`nOperation Cancelled"
  exit
 }
+Write-Host "`nChecking if download already exists`n"
+if (Test-Path -Path "temp\SpotifyNoPremium") {
+    Get-ChildItem -Path "temp\SpotifyNoPremium" -Recurse | Remove-Item -force -recurse
+    Remove-Item "temp\SpotifyNoPremium" -Force 
+}
+if (Test-Path -Path "temp\SpotifyNoPremium-main") {
+    Get-ChildItem -Path "temp\SpotifyNoPremium-main" -Recurse | Remove-Item -force -recurse
+    Remove-Item "temp\SpotifyNoPremium-main" -Force 
+}
     
 Write-Host 'Downloading files from GitHub repository'
 Invoke-WebRequest -Uri 'https://github.com/Daksh777/SpotifyNoPremium/archive/main.zip' -OutFile 'temp.zip'
 Expand-Archive 'temp.zip'
 Remove-Item 'temp.zip'
+
 Rename-Item -Path temp/SpotifyNoPremium-main -NewName SpotifyNoPremium
 if (Test-Path -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium") {
     Get-ChildItem -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Recurse | Remove-Item -force -recurse
     Remove-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Force 
 }
+if (Test-Path -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium") {
+    Get-ChildItem -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Recurse | Remove-Item -force -recurse
+    Remove-Item "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Force 
+}
+
+try {
 Move-Item -Path temp/SpotifyNoPremium -Destination "$(spicetify -c | Split-Path)\Themes" -Force
 Move-Item -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" -Destination "$(spicetify -c | Split-Path)\Extensions" -Force
+}
+catch {
+Write-Host "`nUnable to move files, using backup method to move files"
+Move-Item -Path temp/SpotifyNoPremium -Destination "C:\Users\$env:UserName\.spicetify\Themes" -Force
+Move-Item -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium\adblock.js" -Destination "C:\Users\$env:UserName\.spicetify\Extensions" -Force
+Write-Host "Success!"
+}
 Remove-Item temp -Recurse -Force
-Write-Host "`nDownloaded successfully"
+Write-Host "`nDownloaded successfully`n"
 
 Write-Host 'Setting theme'
-Set-Location "$(spicetify -c | Split-Path)\Themes"
 spicetify config current_theme SpotifyNoPremium
 spicetify config extensions adblock.js
 spicetify backup apply
