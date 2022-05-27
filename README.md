@@ -41,7 +41,7 @@ You can fetch the latest version of this theme by running the `update.bat` scrip
 
 
 ## 2. Manual installation for all users
-> **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify backup apply` to update Spicetify to the latest version.
+> **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify auto` to update Spicetify to the latest version.
 ### Linux and MacOS:
 In **Bash**:
 ```bash
@@ -61,6 +61,27 @@ Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/
 cd "$(spicetify -c | Split-Path)\Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
+Copy-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" "$(spicetify -c | Split-Path)\Extensions"
+spicetify config extensions adblock.js
+spicetify apply
+```
+
+# Updating Manually
+### Linux and MacOS:
+In **Bash**:
+```bash
+cd "$(dirname "$(spicetify -c)")/Themes/SpotifyNoPremium"
+git pull
+cp "$(dirname "$(spicetify -c)")/Themes/SpotifyNoPremium/adblock.js" "$(dirname "$(spicetify -c)")/Extensions"
+spicetify config extensions adblock.js
+spicetify auto
+```
+
+#### Windows
+In **Powershell**:
+```powershell
+cd "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
+git pull
 Copy-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" "$(spicetify -c | Split-Path)\Extensions"
 spicetify config extensions adblock.js
 spicetify apply
