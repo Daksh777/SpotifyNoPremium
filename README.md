@@ -1,5 +1,4 @@
-#### ⚠ If you see a blank/black screen on updating to `1.1.85.895.g2a71e1b8`, follow this link for a fix: [#73 (comment)](https://github.com/Daksh777/SpotifyNoPremium/issues/73#issuecomment-1126847432)
-##### Last tested version: `1.1.84.716.gc5f8b819`
+##### Last tested version: `1.1.86.857.g3751ee08`
 # SpotifyNoPremium
 A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
 
