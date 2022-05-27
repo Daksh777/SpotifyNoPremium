@@ -61,7 +61,6 @@ $spice = [Microsoft.VisualBasic.Interaction]::MsgBox('Is Spicetify CLI installed
 if ($spice -eq 'Yes') {
   Write-Host "`nSkipping Spicetify installation and checking for updates `n"
   RefreshPath
-  spicetify restore
   spicetify upgrade
 }
 
@@ -117,5 +116,5 @@ Write-Host "`nDownloaded successfully`n"
 Write-Host 'Setting theme'
 spicetify config current_theme SpotifyNoPremium
 spicetify config extensions adblock.js
-spicetify backup apply
+spicetify auto
 Write-Host "`nInstalled successfully"
