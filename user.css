@@ -7,11 +7,11 @@
 
 /* Ad placeholder */
 .main-leaderboardComponent-container{
-  display: none;
+  display: none !important; 
 }
 /* Upgrade button */
 .main-topBar-UpgradeButton {
-  display: none;
+  display: none !important;
 }
 
 /* Pointer cursors for accessibility */
@@ -38,7 +38,7 @@
 .main-addButton-button,
 .progress-bar__slider,
 .main-editImageButton-image {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 /* Home page ad section */
@@ -48,7 +48,7 @@
 
 /* Remove download button */
 .x-downloadButton-DownloadButton{
-  display:none;
+  display:none !important;
 }
 
 /* Context menu download button */
@@ -168,27 +168,27 @@
 
 /* Ad placeholder */
 .X871RxPwx9V0MqpQdMom {
-  display: none
+  display: none !important
 }
 
 /* Upgrade button */
 .Qt5xfSWikz6CLU8Vobxs[aria-label="Upgrade to Premium"] {
-  display: none
+  display: none !important
 }
 
 /* Context menu upgrade button */
 .DuEPSADpSwCcO880xjUG a[href="https://www.spotify.com/premium/"] {
-  display: none
+  display: none !important
 }
 
 /* Download button */
 .BKsbV2Xl786X9a09XROH {
-  display: none
+  display: none !important
 }
 
 /* Context menu download button */
 .wC9sIed7pfp47wZbmU6m[aria-disabled="true"] {
-  display: none
+  display: none !important
 }
 
 /* Remove top padding above create playlist button */
@@ -202,14 +202,14 @@ button {
 
  /* Remove upgrade button for v1.1.78 */
 .main-buttons-button[title="Upgrade to Premium"] {
-  display: none
+  display: none !important
 }
 
 /* Remove sponsored playlist in homepage */
 .WiPggcPDzbwGxoxwLWFf,
 .DHeG1dij5qSIc9nr0wDj, 
 .hx2D0g_ursHte5bm62U2 {
-  display: none
+  display: none !important
 }
 
 /* Remove top padding above create playlist button for 1.1.84+ */
@@ -219,5 +219,5 @@ button {
 
 /* Ad placeholder for 1.1.86+ */
 .ReyA3uE3K7oEz7PTTnAn {
-  display: none
+  display: none !important
 }
