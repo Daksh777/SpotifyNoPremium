@@ -8,7 +8,8 @@
   display: none !important; 
 }
 /* Upgrade button */
-.main-topBar-UpgradeButton {
+.main-topBar-UpgradeButton,
+.Button-y0gtbx-0[aria-label="Upgrade to Premium"] {
   display: none !important;
 }
 
