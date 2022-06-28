@@ -1,5 +1,5 @@
 #### Broken playlists and sidebar? Follow this for a fix: [#80 (comment)](https://github.com/Daksh777/SpotifyNoPremium/issues/80#issuecomment-1165275314)
-##### Last tested version: `1.1.86.857.g3751ee08`
+##### Last tested version: `1.1.88.612.gcc529952`
 # SpotifyNoPremium
 A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
 
@@ -85,5 +85,5 @@ cd "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium"
 git pull
 Copy-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" "$(spicetify -c | Split-Path)\Extensions"
 spicetify config extensions adblock.js
-spicetify apply
+spicetify auto
 ```
