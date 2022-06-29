@@ -56,8 +56,6 @@ Write-Host "`nDownloaded successfully"
 
 Write-Host "`nUpdating Spicetify"
 spicetify upgrade
-spicetify restore
-spicetify clear
-spicetify backup apply
+spicetify restore backup apply
 
 Write-Host "`nUpdated theme successfully"
