@@ -117,3 +117,8 @@ button {
 .ReyA3uE3K7oEz7PTTnAn {
   display: none !important
 }
+
+/* Remove extra padding for 1.1.89+ */
+.main-rootlist-rootlist {
+  margin-top: 0 !important
+}
