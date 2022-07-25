@@ -26,7 +26,7 @@ try {
 }
 catch {
   Write-Host "Unable to delete files, using backup method"
-  Get-ChildItem "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Exclude .git | Remove-Item -Force
+  Get-ChildItem "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium" -Exclude .git | Remove-Item -Force
   Write-Host "Success!`n"
 }
 
@@ -47,8 +47,8 @@ try {
 }
 catch {
   Write-Host "Unable to copy files, using backup method"
-  Get-ChildItem temp/SpotifyNoPremium | Copy-Item -Destination "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Force -Recurse
-  Move-Item -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium\adblock.js" -Destination "C:\Users\$env:UserName\.spicetify\Extensions" -Force
+  Get-ChildItem temp/SpotifyNoPremium | Copy-Item -Destination "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium" -Force -Recurse
+  Move-Item -Path "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium\adblock.js" -Destination "C:\Users\$env:UserName\AppData\Roaming\spicetify\Extensions" -Force
 }
 
 Remove-Item temp -Recurse -Force
