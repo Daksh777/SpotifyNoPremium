@@ -95,9 +95,9 @@ if (Test-Path -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium") {
   Get-ChildItem -Path "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Recurse | Remove-Item -Force -Recurse
   Remove-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium" -Force
 }
-if (Test-Path -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium") {
-  Get-ChildItem -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Recurse | Remove-Item -Force -Recurse
-  Remove-Item "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium" -Force
+if (Test-Path -Path "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium") {
+  Get-ChildItem -Path "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium" -Recurse | Remove-Item -Force -Recurse
+  Remove-Item "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium" -Force
 }
 
 try {
@@ -106,8 +106,8 @@ try {
 }
 catch {
   Write-Host "`nUnable to move files, using backup method to move files"
-  Move-Item -Path temp/SpotifyNoPremium -Destination "C:\Users\$env:UserName\.spicetify\Themes" -Force
-  Move-Item -Path "C:\Users\$env:UserName\.spicetify\Themes\SpotifyNoPremium\adblock.js" -Destination "C:\Users\$env:UserName\.spicetify\Extensions" -Force
+  Move-Item -Path temp/SpotifyNoPremium -Destination "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes" -Force
+  Move-Item -Path "C:\Users\$env:UserName\AppData\Roaming\spicetify\Themes\SpotifyNoPremium\adblock.js" -Destination "C:\Users\$env:UserName\AppData\Roaming\spicetify\Extensions" -Force
   Write-Host "Success!"
 }
 Remove-Item temp -Recurse -Force
