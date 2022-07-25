@@ -4,7 +4,7 @@
 A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
 
 ---
-We've switched to a cross-platform ad-blocking solution so make sure to use the latest `install.bat` to get the latest features <br> <br>
+### For installation instructions, go here: [Installation](#installation) <br>
 **If you see a blank/black screen, please follow this link for a fix: https://github.com/Daksh777/SpotifyNoPremium/issues/46#issuecomment-1059945231**
 
 
