@@ -1,4 +1,4 @@
-##### Last tested version: `1.1.93.896.g3ae3b4f3`
+##### Last tested version: `1.1.96.785.g464c973a`
 # SpotifyNoPremium
 A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
 
