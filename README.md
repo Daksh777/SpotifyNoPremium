@@ -46,12 +46,12 @@ You can fetch the latest version of this theme by running the `update.bat` scrip
 In **Bash**:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
-cd "$(dirname "$(spicetify -c)")/Themes"
+cd "$(dirname "$(spicetify -c)")/Themes" (execute the command in a new shell if it's your first time installing spicetify)
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 cp "$(dirname "$(spicetify -c)")/Themes/SpotifyNoPremium/adblock.js" "$(dirname "$(spicetify -c)")/Extensions"
 spicetify config extensions adblock.js
-spicetify apply
+spicetify backup apply
 ```
 
 #### Windows
@@ -63,7 +63,7 @@ git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 Copy-Item "$(spicetify -c | Split-Path)\Themes\SpotifyNoPremium\adblock.js" "$(spicetify -c | Split-Path)\Extensions"
 spicetify config extensions adblock.js
-spicetify apply
+spicetify backup apply
 ```
 
 # Updating Manually
