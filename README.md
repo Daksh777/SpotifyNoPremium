@@ -43,10 +43,13 @@ You can fetch the latest version of this theme by running the `update.bat` scrip
 ## 2. Manual installation for all users
 > **Note for users who install this manually:** Make sure to use the latest Spicetify CLI and Spotify App. Run `spicetify upgrade` and then `spicetify auto` to update Spicetify to the latest version.
 ### Linux and MacOS:
+
+(Execute the 2nd command in a new shell if it's your first time installing spicetify)
+
 In **Bash**:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh
-cd "$(dirname "$(spicetify -c)")/Themes" (execute the command in a new shell if it's your first time installing spicetify)
+cd "$(dirname "$(spicetify -c)")/Themes"
 git clone https://github.com/Daksh777/SpotifyNoPremium
 spicetify config current_theme SpotifyNoPremium
 cp "$(dirname "$(spicetify -c)")/Themes/SpotifyNoPremium/adblock.js" "$(dirname "$(spicetify -c)")/Extensions"
