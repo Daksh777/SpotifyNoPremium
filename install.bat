@@ -116,5 +116,5 @@ Write-Host "`nDownloaded successfully`n"
 Write-Host 'Setting theme'
 spicetify config current_theme SpotifyNoPremium
 spicetify config extensions adblock.js
-spicetify backup apply
+spicetify auto
 Write-Host "`nInstalled successfully"
