@@ -36,6 +36,7 @@
 .main-shuffleButton-button,
 .main-addButton-button,
 .progress-bar__slider,
+.main-trackList-rowImagePlayButton,
 .main-editImageButton-image {
   cursor: pointer !important;
 }
@@ -51,7 +52,8 @@
 }
 
 /* Context menu download button */
-.main-contextMenu-disabled:not([as=a]) {
+.main-contextMenu-disabled:not([as=a]),
+.main-contextMenu-menuItemButton[aria-disabled="true"] {
   display: none !important;
 }
 
