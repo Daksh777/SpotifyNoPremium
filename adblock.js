@@ -112,12 +112,44 @@ const getSettingsClient = (cache) => {
             console.error("adblockify: Failed inside `subToSlot` function", error);
         }
     };
+    const runObserver = () => {
+        const nodeList = Array.from(document.querySelectorAll(".ReactModalPortal"));
+        const observer = new MutationObserver(mutations => {
+            for (const mutation of mutations) {
+                if (mutation.addedNodes.length) {
+                    const node = mutation.addedNodes[0];
+                    const InAppModal = node.classList.contains("GenericModal__overlay");
+                    if (!InAppModal)
+                        continue;
+                    const iframe = node.querySelector("iframe");
+                    if (!iframe)
+                        continue;
+                    const iframeBody = iframe?.contentWindow?.document.body;
+                    if (!iframeBody)
+                        continue;
+                    const promotional = iframeBody.querySelector("[data-click-to-action-url*='/premium-promotional-offer-terms']");
+                    if (!promotional)
+                        continue;
+                    node.remove();
+                }
+            }
+        });
+        for (const node of nodeList) {
+            observer.observe(node, { childList: true });
+        }
+    };
     const enableExperimentalFeatures = async () => {
         try {
             const expFeatures = JSON.parse(localStorage.getItem("spicetify-exp-features") || "{}");
             const hptoEsperanto = expFeatures.enableEsperantoMigration?.value;
+            const inAppMessages = expFeatures.enableInAppMessaging?.value;
+            const upgradeCTA = expFeatures.hideUpgradeCTA?.value;
             if (!hptoEsperanto)
                 expFeatureOverride({ name: "enableEsperantoMigration", default: true });
+            if (inAppMessages)
+                expFeatureOverride({ name: "enableInAppMessaging", default: false });
+            if (!upgradeCTA)
+                expFeatureOverride({ name: "hideUpgradeCTA", default: true });
         }
         catch (error) {
             console.error("adblockify: Failed inside `enableExperimentalFeatures` function", error);
@@ -125,6 +157,8 @@ const getSettingsClient = (cache) => {
     };
     enableExperimentalFeatures();
     bindToSlots();
+    // to enable one day if disabling `enableInAppMessages` exp feature doesn't work
+    //runObserver();
     productState.subValues({ keys: ["ads", "catalogue", "product", "type"] }, () => configureAdManagers());
     // Update slot settings after 5 seconds... idk why, don't ask me why, it just works
     setTimeout(intervalUpdateSlotSettings, 5 * 1000);
