@@ -1,3 +1,12 @@
+# ⚠ This repository is no longer maintained, please use [Adblockify](https://github.com/rxri/spicetify-extensions/tree/main/adblock) instead
+As Spicetify kept getting developed, SpotifyNoPremium was no longer a better alternative to any other available options. <br>
+I've tried making this as simple as I could with one-click scripts (especially for people who aren't familiar with CLIs or just aren't tech-savvy in general), but after [Spicetify Marketplace](https://github.com/spicetify/marketplace/wiki/Installation) got better, this is no longer the case and is very easy to use.
+
+I recommend switching to Adblockify, all instructions can be found here: https://github.com/rxri/spicetify-extensions/tree/main/adblock
+
+
+---
+---
 ##### Last tested version: `v1.2.37.701.ge66eb7bc` on Spicetify `v2.36.11`
 # SpotifyNoPremium
 A cross-platform Spicetify theme which removes all Spotify ads (audio, banner, popup, etc.) and declutters the stock UI. 
