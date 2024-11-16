@@ -61,3 +61,11 @@
 .sponsor-container,.WiPggcPDzbwGxoxwLWFf {
   display: none !important
 }
+
+/** 
+ * disable banner pop-up on recent spotify update
+ * @see https://github.com/Daksh777/SpotifyNoPremium/issues/129#issuecomment-2360649974
+ */
+._Cq69xKZBtHaaeMZXIdk {
+  display: none !important;
+}
